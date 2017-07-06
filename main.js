@@ -44,14 +44,15 @@ math = high - "5";
 // The answer shoud not be written in a comment.
 let born = 1984;
 let today = 2017;
-// A:let tims age = today - born;
+ A:let age = today - born;
+console.log('tim is' + age + 'years old.');
 
 
 
 // 8.
 // Adjust this code. Store some information in the following variables.
-// A:let yourName= rudy;
-// let instructorName= adam;
+// A:let yourName= "rudy";
+// let instructorName= "adam";
 
 
 
@@ -82,48 +83,48 @@ let myUndefined;
 // For questions 11 - 19: List which boolean value will be stored in each variable. (Remember: `==` does not check data type)
 
 // 11.
-let x = (false == 0);
+let x = (false === 0);
 // A.true
 
 
 // 12.
-let y = (false == "");
-// A.false
+let y = (false ==="");
+// A.true
 
 
 // 13.
-let z = (0 == "");
-// A.false
+let z = (0 === "");
+// A.true
 
 
 // 14.
-let a = (null == null);
+let a = (null === null);
 // A.true
 
 
 // 25.
-let b = (undefined == undefined);
+let b = (undefined === undefined);
 // A.true
 
 
 // 16.
-let c = (undefined == null);
+let c = (undefined === null);
 // A.flase
 
 
 // 17.
-let d = (null == false);
+let d = (null === false);
 // A.flase
 
 
 // 18.
-let e = (NaN == null);
+let e = (NaN === null);
 // A.false
 
 
 // 19.
-let f = (NaN == NaN);
-// A.true
+let f = (NaN === NaN);
+// A.false
 
 
 // 20.
@@ -134,7 +135,7 @@ let f = (NaN == NaN);
 // console.log("I've had enough to drink.");
 // }
 let thirsty = true;
-
+if (thirsty)
 {
   console.log("I'm parched!");
 } else  {
@@ -181,7 +182,7 @@ if(false){
 } else {
 	console.log("False!");
 }
-// A:true
+// A:false
 
 
 // 25.
@@ -222,7 +223,7 @@ if({name: "Yehuda Katz"}){
 
 // 29.
 if(new Date()){
-	console.log("True!");
+	console.log("True!");s
 } else {
 	console.log("False!");
 }
